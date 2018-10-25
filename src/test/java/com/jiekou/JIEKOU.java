@@ -40,6 +40,7 @@ public class JIEKOU {
             HttpEntity entity = response.getEntity();
             // 通过EntityUtils中的toString方法将结果转换为字符串
             result = EntityUtils.toString(entity);
+            System.out.print(result);
 
         } catch (ClientProtocolException e) {
             e.printStackTrace();
