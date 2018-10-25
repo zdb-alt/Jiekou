@@ -64,6 +64,7 @@ public class JIEKOU {
             }
 
         }
+        System.out.print("网址成功");
         return result;
 
     }
