@@ -27,9 +27,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Jiekou" target="1.5" />
-      <module name="test" target="1.5" />
-      <module name="test1" target="1.5" />
+      <module name="Jiekou" target="1.6" />
+      <module name="test" target="1.6" />
+      <module name="test1" target="1.6" />
       <module name="test2" target="1.5" />
     </bytecodeTargetLevel>
   </component>
