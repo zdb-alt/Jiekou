@@ -19,6 +19,8 @@
                 </configuration>
             </plugin>
         </plugins>
+
+
     </build>
     <modules>
         <module>test</module>
@@ -37,7 +39,7 @@
             <version>6.14.3</version>
             <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+
         <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
@@ -45,12 +47,12 @@
             <version>2.6.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+
     </dependencies>
     <properties>
+        <allure.version>1.5.4</allure.version>
         <aspectj.version>1.8.10</aspectj.version>
     </properties>
-
 
     <build>
         <plugins>
@@ -62,16 +64,17 @@
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.aspectj</groupId>
+                            <artifactId>aspectjweaver</artifactId>
+                            <version>${aspectj.version}</version>
+                        </dependency>
+                    </dependencies>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.aspectj</groupId>
-                        <artifactId>aspectjweaver</artifactId>
-                        <version>${aspectj.version}</version>
-                    </dependency>
-                </dependencies>
             </plugin>
         </plugins>
+
     </build>
 
 </project>

@@ -7,6 +7,9 @@
                 <methods>
                     <include> name="t1"</include>
                     <include> name="t2"</include>
+                    <include> name="t3"</include>
+                    <include> name="t4"</include>
+                    <include> name="t5"</include>
                 </methods>
 
             </class>

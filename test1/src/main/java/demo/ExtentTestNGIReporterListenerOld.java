@@ -16,7 +16,7 @@ import java.util.*;
 
 public class ExtentTestNGIReporterListenerOld implements IReporter {
     //生成的路径以及文件名
-    private static final String OUTPUT_FOLDER = "allure-results/";
+    private static final String OUTPUT_FOLDER = "target/";
     private static final String FILE_NAME = "index.html";
 
     private ExtentReports extent;
